@@ -2,10 +2,9 @@
 
 R Scripts for the experimentation phase (Section 5) of the manuscript:
 
-# Ordinal Classification with label-dependent loss
+## Ordinal Classification with label-dependent loss
 
 ## By Rosario Delgado
-
 ____________________________________________________________________________________________
 
 ### EXPERIMENTAL EVALUATION 
@@ -16,10 +15,6 @@ https://doi.org/10.1016/j.knosys.2025.113837.
 For that, we compare their predictive performance using three metrics for hyper-parameter tuning in random forests models: the error rate, the standardized Mean Absolute Error (SMAE), and the standardized interval-sensitive metric SMAE.int. We also assess the sensitivity of results to the choice of the length assigned to the rightmost interval. 
 
 We consider the real-world Facial age dataset (https://www.kaggle.com/datasets/frabbisw/facial-age)
-
-
-It uses the content in https://github.com/giuliabinotto/ IntervalScaleClassification, which correspond to Section 4 fot the same paper, where scripts facilitate the computation of two ordinal metrics, Mean Absolute Error (MAE) and Total Cost (TC), alongside their interval scale counterparts introduced in the paper, with a specific section designed to address scenarios in which the rightmost interval is unbounded.
-
 ___________________________
 
 ## Specific R scripts
@@ -37,10 +32,8 @@ mat_square.R
 Converts any matrix in a square matrix with desired row/column labels, by adding zeros if needed.
 
 From https://github.com/giuliabinotto/ IntervalScaleClassification
-
-BD_OC_MAE.R: computes MAE and normalized SMAE metrics.
-
-BD_OC_MAEintervals.R: computes MAE.int and SMAE.int metrics.
+   BD_OC_MAE.R: computes MAE and normalized SMAE metrics.
+   BD_OC_MAEintervals.R: computes MAE.int and SMAE.int metrics.
 
 
 ## Requirements
@@ -49,12 +42,12 @@ The following libraries are needed:
 
 magick, stringr, mdatools, png and utils (used by "From_png_to_dataframe.R")
 
-arules (used by "train_caret_rf.R")
+arules (used by "train_caret_rf.R" for "discretize" function)
 
-caret (used by "train_caret_rf.R")
+caret (used by "train_caret_rf.R" for the construction of random forest models)
 
 
-Author
+### Author
 Rosario Delgado (Universitat Autònoma de Barcelona, Spain, 2025).
 
 ____________________________
