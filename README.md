@@ -32,7 +32,9 @@ mat_square.R
 Converts any matrix in a square matrix with desired row/column labels, by adding zeros if needed.
 
 From https://github.com/giuliabinotto/ IntervalScaleClassification
+   
    BD_OC_MAE.R: computes MAE and normalized SMAE metrics.
+   
    BD_OC_MAEintervals.R: computes MAE.int and SMAE.int metrics.
 
 
